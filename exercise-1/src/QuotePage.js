@@ -26,6 +26,11 @@ var QuotePage = React.createClass({
 			<div className="quotePage">
 				<div>
 					<p className="instructions">Iterate through <code>this.state.quotes</code>, and create a new <code>Quote</code> component for each one</p>
+					{
+						this.state.quotes.map(function(q){
+							return < Quote />
+						})
+					}
 				</div>
 			</div>
 		);
